@@ -1,3 +1,18 @@
+//Main
+@import './_reset.scss';
+@import './_colours.scss';
+
+// Viewport and breakpoints
+@import './_breakpoints.scss';
+
+// Organisms
+@import '../components/organisms/Header/_styles.scss';
+
 html {
-  background-color: #00ff00;
+  background-color: #F5F5F5;
+}
+
+.main {
+  
+
 }
