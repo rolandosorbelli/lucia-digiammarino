@@ -1,15 +1,15 @@
 .newsbanner {
-  height: 50px;
+  width: 100%;
   background-color: #017B9A;
   padding: 10px;
   position: fixed;
   bottom: 0;
+  box-sizing: border-box;
 
   & > * {
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Lato';
-    // font-weight: bold;
     font-style: italic;
     color: #F5F5F5;
   }
