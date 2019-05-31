@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
-import logo from "../../../images/logo.svg"
+import logo from "../../images/logo.svg"
 
 class Header extends React.Component {
   constructor(props){
@@ -33,7 +33,7 @@ class Header extends React.Component {
           </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <polygon fill="white" points="0,100 100,0 100,100"/>
+          <polygon fill="white" points="0,40 100,100 0,100"/>
         </svg>
       </header>
     )
