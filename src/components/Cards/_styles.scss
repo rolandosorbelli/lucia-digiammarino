@@ -1,0 +1,48 @@
+main {
+  margin-top: 50px;
+
+  & .cards__item {
+    height: 150px;
+    display: flex;
+    padding: 30px 0;
+    background-color: #FFF;
+    border-bottom: 1px solid #DDD;
+
+    &--left {
+      flex: 1;
+      max-width: 150px;
+      height: auto;
+      padding: 0 40px;
+    }
+
+    &--right {
+      flex: 1;
+      font-size: 1.5rem;
+      font-family: 'Lato';
+      font-weight: bold;
+      font-style: italic;
+      color: #017B9A;
+      height: 100%;
+      position: relative;
+
+      & h2:after {
+        content: "";
+        display: block;
+        width: 20px;
+        padding-top: 7px;
+        border-bottom: 4px solid #EA5A5A;
+      }
+
+      & h3 {
+        font-size: 4rem;
+        position: absolute;
+        bottom: -50px;
+        opacity: .15;
+      }
+    }
+
+    &:first-child {
+      border-top: 1px solid #DDD;
+    }
+  }
+}

@@ -2,7 +2,8 @@ import React from "react"
 import PropTypes from 'prop-types'
 import { Link } from "gatsby"
 
-import Header from "../components/organisms/Header"
+import Header from "../components/Header"
+import Cards from "../components/Cards"
 
 class Index extends React.Component {
 
@@ -14,7 +15,7 @@ class Index extends React.Component {
     return (
       <div className="main">
         <Header/>
-        <div className="blah"></div>
+        <Cards/>
       </div>
     )
   }
