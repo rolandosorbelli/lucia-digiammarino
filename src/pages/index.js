@@ -1,21 +1,18 @@
 import React from "react"
-import PropTypes from 'prop-types'
-import { Link } from "gatsby"
 
 import Header from "../components/Header"
 import Cards from "../components/Cards"
+import NewsBanner from "../components/NewsBanner"
 
 class Index extends React.Component {
 
   render() {
-    const {
-      header
-    } = this.props
 
     return (
       <div className="main">
-        <Header/>
-        <Cards/>
+        <Header />
+        <Cards />
+        <NewsBanner />
       </div>
     )
   }
