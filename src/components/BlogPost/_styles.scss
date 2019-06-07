@@ -1,0 +1,29 @@
+.blogpost {
+  padding: 0 40px;
+
+  &__title {
+    font-family: 'Lato';
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+    font-size: 2rem;
+    color: #017B9A;
+    margin-bottom: 10px;
+  }
+
+  &__date {
+    width: 100%;
+    text-align: left;
+    font-family: 'Lato';
+    font-weight: lighter;
+    font-size: 0.9rem;
+    color: #5A5A5A;
+    border-bottom: 1px solid #5A5A5A;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+
+  & > img {
+    width: calc(100% + (40px * 2));
+    margin-left: -40px;
+  }
+}
