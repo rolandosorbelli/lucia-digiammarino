@@ -2,9 +2,6 @@
   width: 100%;
   background-color: #017B9A;
   padding: 10px;
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
   box-sizing: border-box;
 
   & > * {
@@ -24,6 +21,12 @@
   }
 
   &__link {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
     text-decoration: none;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
   }
 }

@@ -3,6 +3,8 @@ import Stickyfill from 'stickyfilljs'
 
 import arrow from '../../images/down-arrow.svg'
 
+import jump from 'jump.js'
+
 class NewsBanner extends React.Component {
   constructor(props){
     super(props);
@@ -16,9 +18,9 @@ class NewsBanner extends React.Component {
     Stickyfill.add(banner)
 
     return(
-      <a
+      <button
         className="newsbanner__link"
-        href="#">
+        onClick={()=> jump('.newsHeader')}>
           <div className="newsbanner">
             <h2>Blog Posts</h2>
             <img
@@ -27,7 +29,7 @@ class NewsBanner extends React.Component {
               alt=""
             />
           </div>
-      </a>
+      </button>
     );
   }
 }
