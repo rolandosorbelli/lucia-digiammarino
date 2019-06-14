@@ -9,6 +9,7 @@ main {
     border-bottom: 1px solid #DDD;
     border-top: 1px solid #DDD;
     margin-bottom: 20px;
+    text-decoration: none;
 
     &--left {
       flex: 1;
@@ -42,10 +43,5 @@ main {
         opacity: .15;
       }
     }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
   }
 }
