@@ -1,9 +1,7 @@
 main {
-  margin-top: 100px;
-
   @include lg {
-    height: calc(100vh - 267px);
-    padding: 50px 0 200px 0;
+    height: calc(100vh - 410px);
+    padding: 50px 0 100px 0;
     box-sizing: border-box;
     flex: none;
   }
@@ -50,6 +48,7 @@ main {
 
       & h1 {
         font-size: 3.5rem;
+        padding-bottom: 20px;
       }
 
       & h2 {
