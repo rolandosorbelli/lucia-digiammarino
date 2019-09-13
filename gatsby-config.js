@@ -1,4 +1,4 @@
-require('dotenv').config({
+require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
@@ -11,10 +11,10 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-source-contentful',
+      resolve: "gatsby-source-contentful",
       options: {
         spaceId: `tkb6gelx5w7j`,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        accessToken: `kcAsKDz40BgfjU98Q2IB87UD-YH1AqIbLUXqECMoaxY`,
       },
     },
     {
@@ -22,7 +22,7 @@ module.exports = {
       options: {
         google: {
           families: [`Lato`],
-        }
+        },
       },
     },
     `gatsby-plugin-sass`,
