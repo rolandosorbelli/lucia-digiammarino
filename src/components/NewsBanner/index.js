@@ -12,12 +12,6 @@ class NewsBanner extends React.Component {
     this.state = {}
   }
 
-  componentDidMount() {
-    if (typeof window === undefined) {
-      const Stickyfill = require("stickyfilljs")
-    }
-  }
-
   render() {
     const banner = document.querySelectorAll(".newsbanner")
     Stickyfill.add(banner)
