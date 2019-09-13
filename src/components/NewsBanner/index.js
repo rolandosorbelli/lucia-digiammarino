@@ -13,7 +13,7 @@ class NewsBanner extends React.Component {
   }
 
   componentDidMount() {
-    if (typeof window !== "undefined") {
+    if (typeof window === undefined) {
       const Stickyfill = require("stickyfilljs")
     }
   }
