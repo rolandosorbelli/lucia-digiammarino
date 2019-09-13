@@ -19,7 +19,6 @@ class Cards extends React.Component {
         <div className="cards__wrapper">
           <BrowserRouter>
             <a href="/about" className="cards__item">
-              <img className="cards__item--left" src={about} alt="" />
               <div className="cards__item--right cards__item--right--section1">
                 <h1>About me</h1>
                 <h2>Contacts</h2>
@@ -30,7 +29,6 @@ class Cards extends React.Component {
               href="https://www.linkedin.com/in/luciadigia/"
               className="cards__item"
             >
-              <img className="cards__item--left" src={cv} alt="" />
               <div className="cards__item--right cards__item--right--section2">
                 <h1>LinkedIn</h1>
                 <h2>CV</h2>
@@ -41,7 +39,6 @@ class Cards extends React.Component {
               href="https://www.behance.net/luciadigiammarino"
               className="cards__item"
             >
-              <img className="cards__item--left" src={portfolio1} alt="" />
               <div className="cards__item--right cards__item--right--section3">
                 <h1>Behance</h1>
                 <h2>Portfolio</h2>
@@ -52,7 +49,6 @@ class Cards extends React.Component {
               href="https://www.artstation.com/luciadigiammarino"
               className="cards__item"
             >
-              <img className="cards__item--left" src={portfolio2} alt="" />
               <div className="cards__item--right cards__item--right--section4">
                 <h1>ArtStation</h1>
                 <h2>Portfolio</h2>

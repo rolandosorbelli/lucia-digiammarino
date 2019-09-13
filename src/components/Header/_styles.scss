@@ -56,12 +56,25 @@ header {
     bottom: -80px;
     z-index: 1;
 
+    @include md {
+      width: 230px;
+      height: 180px;
+
+      & h1 {
+        font-size: 2rem;
+        padding-bottom: 20px;
+      }
+
+      & h2 {
+        font-size: 1.5rem;
+      }
+    }
+
     & > * {
       padding: 16px 20px;
       font-family: "Lato";
       font-weight: bolder;
       font-style: italic;
-      line-height: 20px;
       color: #5a5a5a;
     }
 
@@ -70,7 +83,7 @@ header {
       display: block;
       width: 20px;
       padding-top: 7px;
-      border-bottom: 2px solid #ea5a5a;
+      border-bottom: 4px solid #ea5a5a;
     }
   }
 }
