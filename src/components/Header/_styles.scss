@@ -84,8 +84,6 @@ header {
     }
 
     @include sm {
-      width: 220px;
-      height: 180px;
       bottom: -150px;
 
       & h1 {
@@ -94,9 +92,6 @@ header {
     }
 
     @include md {
-      width: 280px;
-      height: 200px;
-
       & h1 {
         font-size: 2.5rem;
         padding-bottom: 20px;
