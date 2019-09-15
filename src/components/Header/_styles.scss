@@ -55,7 +55,6 @@ header {
 
   &--right {
     flex: 1;
-    // width: 160px;
     height: 160px;
     background-color: #ffffff;
     text-align: left;
@@ -138,7 +137,7 @@ header {
     & > * {
       padding: 30px 20px;
       font-family: "Lato";
-      font-weight: 200;
+      font-weight: 800;
       font-style: italic;
       color: #5a5a5a;
 
