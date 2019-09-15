@@ -1,5 +1,4 @@
 import React from "react"
-import Stickyfill from "stickyfilljs"
 
 import arrow from "../../images/down-arrow.svg"
 
@@ -13,9 +12,6 @@ class NewsBanner extends React.Component {
   }
 
   render() {
-    const banner = document.querySelectorAll(".newsbanner")
-    Stickyfill.add(banner)
-
     return (
       <button className="newsbanner__link" onClick={() => jump(".newsHeader")}>
         <div className="newsbanner">

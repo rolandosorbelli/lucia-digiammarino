@@ -7,9 +7,7 @@ import NewsHeader from "../components/NewsHeader"
 import BlogPost from "../components/BlogPost"
 
 class Index extends React.Component {
-
   render() {
-
     return (
       <div className="main">
         <Header />

@@ -1,10 +1,4 @@
 import React from "react"
-import { BrowserRouter } from "react-router-dom"
-
-import about from "../../images/about.svg"
-import cv from "../../images/cv.svg"
-import portfolio1 from "../../images/portfolio1.svg"
-import portfolio2 from "../../images/portfolio2.svg"
 
 class Cards extends React.Component {
   constructor(props) {
@@ -16,8 +10,8 @@ class Cards extends React.Component {
   render() {
     return (
       <main>
-        <div className="cards__wrapper">
-          <BrowserRouter>
+        <div className="cards__outside">
+          <div className="cards__wrapper">
             <a href="/about" className="cards__item">
               <div className="cards__item--right cards__item--right--section1">
                 <h1>About me</h1>
@@ -54,7 +48,7 @@ class Cards extends React.Component {
                 <h2>Portfolio</h2>
               </div>
             </a>
-          </BrowserRouter>
+          </div>
         </div>
       </main>
     )
