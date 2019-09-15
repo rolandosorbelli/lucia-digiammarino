@@ -37,8 +37,13 @@ header {
 
   &--left {
     & > img {
-      width: 170px;
+      width: 120px;
       height: auto;
+
+      @include sm {
+        width: 170px;
+        height: auto;
+      }
 
       @include lg {
         position: absolute;
@@ -50,8 +55,8 @@ header {
 
   &--right {
     flex: 1;
-    width: 220px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     background-color: #ffffff;
     text-align: left;
     -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
@@ -59,7 +64,7 @@ header {
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
     position: absolute;
     right: 20px;
-    bottom: -150px;
+    bottom: -180px;
     z-index: 1;
     margin-bottom: 20px;
 
@@ -72,12 +77,22 @@ header {
     }
 
     & h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
       padding-bottom: 10px;
     }
 
     & h2 {
       font-size: 1.5rem;
+    }
+
+    @include sm {
+      width: 220px;
+      height: 180px;
+      bottom: -150px;
+
+      & h1 {
+        font-size: 2rem;
+      }
     }
 
     @include md {
@@ -121,15 +136,15 @@ header {
     }
 
     & > * {
-      padding: 16px 20px;
+      padding: 30px 20px;
       font-family: "Lato";
       font-weight: bolder;
       font-style: italic;
       color: #5a5a5a;
+
+      @include sm {
+        padding: 16px 20px;
+      }
     }
   }
-}
-
-.blah {
-  height: 500px;
 }
