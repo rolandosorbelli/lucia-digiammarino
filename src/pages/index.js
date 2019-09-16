@@ -2,9 +2,9 @@ import React from "react"
 
 import Header from "../components/Header"
 import Cards from "../components/Cards"
-import NewsBanner from "../components/NewsBanner"
 import NewsHeader from "../components/NewsHeader"
 import BlogPost from "../components/BlogPost"
+import PostGrid from "../components/PostGrid"
 
 class Index extends React.Component {
   render() {
@@ -12,9 +12,8 @@ class Index extends React.Component {
       <div className="main">
         <Header />
         <Cards />
-        <NewsBanner />
         <NewsHeader />
-        <BlogPost />
+        <PostGrid />
       </div>
     )
   }
