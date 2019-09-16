@@ -40,7 +40,7 @@ main {
     &--right {
       flex: 1;
       font-size: 1.5rem;
-      font-family: "Lato";
+      font-family: "lato";
       font-weight: bold;
       font-style: italic;
       color: #fff;
@@ -63,13 +63,6 @@ main {
         padding-top: 7px;
         border-bottom: 4px solid #ea5a5a;
       }
-
-      & h3 {
-        font-size: 4rem;
-        position: absolute;
-        bottom: -50px;
-        opacity: 0.15;
-      }
     }
   }
 }
@@ -79,6 +72,8 @@ main {
 }
 
 .cards__wrapper {
+  padding-bottom: 10px;
+
   @include sm {
     display: flex;
     flex-flow: column;
