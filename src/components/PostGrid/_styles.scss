@@ -1,0 +1,23 @@
+.postgrid__wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.postgrid__card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.postgrid__image {
+  width: 100%;
+  height: auto;
+  flex: 1;
+}
+
+.postgrid__content {
+  flex: 1;
+}
