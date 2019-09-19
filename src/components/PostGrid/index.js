@@ -41,9 +41,11 @@ const PostGrid = () => (
             <div className="postgrid__content">
               <h1>{edge.node.title}</h1>
               <p>{edge.node.shortSynopsis}</p>
-              {edge.node.category.map(category => (
-                <li key={category.id}>{category.title}</li>
-              ))}
+              <div>
+                {edge.node.category.map((category, index) => {
+                  return <span key={index}>{ (index ? ', ' : '') + category.title }</span>
+                })}
+              </div>
             </div>
           </div>
         ))}
