@@ -13,7 +13,7 @@ class Cards extends React.Component {
         <div className="cards__outside">
           <div className="cards__wrapper">
             <a href="/about" className="cards__item">
-              <div className="cards__item--right cards__item--right--section1">
+              <div className="cards__content">
                 <h1>About me</h1>
                 <h2>Contacts</h2>
               </div>
@@ -23,7 +23,7 @@ class Cards extends React.Component {
               href="https://www.linkedin.com/in/luciadigia/"
               className="cards__item"
             >
-              <div className="cards__item--right cards__item--right--section2">
+              <div className="cards__content">
                 <h1>LinkedIn</h1>
                 <h2>CV</h2>
               </div>
@@ -33,7 +33,7 @@ class Cards extends React.Component {
               href="https://www.behance.net/luciadigiammarino"
               className="cards__item"
             >
-              <div className="cards__item--right cards__item--right--section3">
+              <div className="cards__content">
                 <h1>Behance</h1>
                 <h2>Portfolio</h2>
               </div>
@@ -43,7 +43,7 @@ class Cards extends React.Component {
               href="https://www.artstation.com/luciadigiammarino"
               className="cards__item"
             >
-              <div className="cards__item--right cards__item--right--section4">
+              <div className="cards__content">
                 <h1>ArtStation</h1>
                 <h2>Portfolio</h2>
               </div>

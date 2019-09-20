@@ -18,7 +18,7 @@ const PostGrid = () => (
                 slug
               }
               image {
-                fluid(maxWidth: 1200, quality: 100) {
+                fluid(maxWidth: 1200, maxHeight: 675, quality: 100) {
                   src
                 }
               }
