@@ -4,77 +4,13 @@ main {
     box-sizing: border-box;
     flex: none;
   }
-
-  // & .cards__item {
-  //   height: 300px;
-  //   display: flex;
-  //   padding: 30px 0;
-  //   background-color: #3dc5cb;
-  //   margin-bottom: 20px;
-  //   text-decoration: none;
-  //   margin: 20px;
-  //   box-sizing: border-box;
-  //
-  //   @include md {
-  //     width: 300px;
-  //     height: 350px;
-  //     flex: 1 1 35%;
-  //     margin: 20px;
-  //   }
-  //
-  //   @include lg {
-  //     flex: 1;
-  //     padding: 10px;
-  //     height: 100%;
-  //     height: 300px;
-  //   }
-  //
-  //   &--left {
-  //     flex: 1;
-  //     max-width: 150px;
-  //     height: auto;
-  //     padding: 0 40px;
-  //   }
-  //
-  //   &--right {
-  //     flex: 1;
-  //     font-size: 1.5rem;
-  //     font-family: "lato";
-  //     font-weight: bold;
-  //     font-style: italic;
-  //     color: #fff;
-  //     position: relative;
-  //     padding: 20px 40px;
-  //
-  //     & h1 {
-  //       font-size: 3rem;
-  //       padding-bottom: 20px;
-  //     }
-  //
-  //     & h2 {
-  //       font-size: 2rem;
-  //     }
-  //
-  //     & h2:after {
-  //       content: "";
-  //       display: block;
-  //       width: 40px;
-  //       padding-top: 7px;
-  //       border-bottom: 4px solid #ea5a5a;
-  //     }
-  //   }
-  // }
-}
-
-.cards__outside {
-  height: 80%;
 }
 
 .cards__wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-flow: dense;
-  grid-gap: 16px;
+  grid-gap: 50px;
   padding: 20px;
   box-sizing: border-box;
 
@@ -119,21 +55,3 @@ main {
     }
   }
 }
-// .cards__wrapper {
-//   padding-bottom: 10px;
-//
-//   @include sm {
-//     display: flex;
-//     flex-flow: column;
-//   }
-//
-//   @include md {
-//     display: flex;
-//     flex-flow: row;
-//     flex-wrap: wrap;
-//   }
-//
-//   @include lg {
-//     height: 100%;
-//   }
-// }

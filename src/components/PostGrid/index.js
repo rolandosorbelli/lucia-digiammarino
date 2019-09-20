@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, navigate } from "gatsby"
 
 const PostGrid = () => (
   <StaticQuery
@@ -33,7 +33,9 @@ const PostGrid = () => (
         {data.allContentfulBlogPost.edges.map(edge => (
           <div
             key={edge.node.id}
-            className="postgrid__card">
+            className="postgrid__card"
+            onClick={() => navigate(`/blog/${edge.node.slug}`)}
+          >
             <img
               className="postgrid__image"
               src={edge.node.image.fluid.src}
