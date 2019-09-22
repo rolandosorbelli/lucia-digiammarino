@@ -1,6 +1,6 @@
 .postgrid__wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-auto-flow: dense;
   grid-gap: 16px;
   padding: 20px;
@@ -12,7 +12,7 @@
   flex-direction: column;
   box-sizing: border-box;
   position: relative;
-  margin-bottom: 130px;
+  margin-bottom: 100px;
   cursor: pointer;
 }
 
@@ -28,7 +28,7 @@
   position: absolute;
   background-color: white;
   padding: 20px;
-  bottom: -90px;
+  top: 55%;
   left: 10px;
   width: 90%;
   box-sizing: border-box;

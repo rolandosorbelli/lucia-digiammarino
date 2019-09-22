@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql, navigate } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 
 const PostGrid = () => (
   <StaticQuery
@@ -18,6 +18,7 @@ const PostGrid = () => (
                 slug
               }
               image {
+                description
                 fluid(maxWidth: 1200, maxHeight: 675, quality: 100) {
                   src
                 }
@@ -31,25 +32,28 @@ const PostGrid = () => (
       <div className="postgrid__wrapper">
         {console.log(data)}
         {data.allContentfulBlogPost.edges.map(edge => (
-          <div
-            key={edge.node.id}
+          <a
+            href={`/blog/${edge.node.slug}`}
             className="postgrid__card"
-            onClick={() => navigate(`/blog/${edge.node.slug}`)}
+            key={edge.node.id}
           >
-            <img
-              className="postgrid__image"
-              src={edge.node.image.fluid.src}
-            />
-            <div className="postgrid__content">
-              <h1>{edge.node.title}</h1>
-              <p>{edge.node.shortSynopsis}</p>
-              <div>
-                {edge.node.category.map((category, index) => {
-                  return <span key={index}>{ (index ? ', ' : '') + category.title }</span>
-                })}
+            <div>
+              <img
+                className="postgrid__image"
+                src={edge.node.image.fluid.src}
+                alt={edge.node.image.description}
+              />
+              <div className="postgrid__content">
+                <h1>{edge.node.title}</h1>
+                <p>{edge.node.shortSynopsis}</p>
+                <div>
+                  {edge.node.category.map((category, index) => {
+                    return <span key={index}>{ (index ? ', ' : '') + category.title }</span>
+                  })}
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     )}
