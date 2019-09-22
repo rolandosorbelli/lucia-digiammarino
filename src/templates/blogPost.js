@@ -50,9 +50,9 @@ const blogPost = (props) => {
         <div className="blogpost">
           <h1 className="blogpost__title">{props.data.contentfulBlogPost.title}</h1>
           <p className="blogpost__date">{props.data.contentfulBlogPost.createdAt}</p>
-          <p className="blogpost__content" dangerouslySetInnerHTML={
-            {__html: `<div> ${props.data.contentfulBlogPost.content.childMarkdownRemark.html} </div>`}
-          }/>
+          <div className="blogpost__content" dangerouslySetInnerHTML={
+            {__html: `${props.data.contentfulBlogPost.content.childMarkdownRemark.html}`}
+          }></div>
         </div>
       </div>
     </Layout>
