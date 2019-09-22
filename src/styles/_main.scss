@@ -10,9 +10,12 @@
 @import "../components/Cards/_styles.scss";
 @import "../components/NewsBanner/_styles.scss";
 @import "../components/NewsHeader/_styles.scss";
-@import "../components/BlogPost/_styles.scss";
+// @import "../components/BlogPost/_styles.scss";
 @import "../components/AboutContent/_styles.scss";
 @import "../components/PostGrid/_styles.scss";
+
+// Templates
+@import "../templates/_styles.scss";
 
 html {
   background-color: #f5f5f5;

@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Header from "../components/Header"
 import Layout from "../components/layout"
+import logo from "../images/logo.svg"
 
 export const query = graphql`
 query blogPost($id: String!) {
@@ -10,6 +10,12 @@ query blogPost($id: String!) {
     title
     id
     slug
+    createdAt(locale: "en-GB", formatString: "D/MM/Y")
+    quote
+    category {
+      id
+      title
+    }
     content {
       id
       childMarkdownRemark {
@@ -21,7 +27,6 @@ query blogPost($id: String!) {
         src
       }
     }
-    createdAt(locale: "en-GB", formatString: "D/M/Y")
   }
 }
 `
@@ -30,12 +35,21 @@ const blogPost = (props) => {
   console.log(props.data.contentfulBlogPost)
   return (
     <Layout>
-      <Header />
       <div className="blogContainer">
+        <a href="/">
+          <img
+            className="logo"
+            src={logo}
+            alt="Lucia Di Giammarino Logo"
+          />
+        </a>
+        <div
+          className="blogpost__hero"
+          style={{backgroundImage: `url(${props.data.contentfulBlogPost.image.fluid.src})`}}
+         />
         <div className="blogpost">
           <h1 className="blogpost__title">{props.data.contentfulBlogPost.title}</h1>
           <p className="blogpost__date">{props.data.contentfulBlogPost.createdAt}</p>
-          <img src={props.data.contentfulBlogPost.image.fluid.src} alt="" />
           <p className="blogpost__content" dangerouslySetInnerHTML={
             {__html: `${props.data.contentfulBlogPost.content.childMarkdownRemark.html}`}
           }/>
