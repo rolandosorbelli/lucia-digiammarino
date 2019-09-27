@@ -10,9 +10,9 @@
     height: auto;
   }
 
-  @include lg {
+  @include md {
     position: absolute;
-    left: 25%;
+    left: 10%;
     top: 40px;
   }
 }
@@ -40,8 +40,8 @@
     background-image: linear-gradient(
       to bottom,
       rgba(10, 10, 10, 0.8) 0%,
-      rgba(10, 10, 10, 0.2) 20%,
-      rgba(10, 10, 10, 0) 30%
+      rgba(10, 10, 10, 0.2) 30%,
+      rgba(10, 10, 10, 0) 50%
     );
   }
 }
