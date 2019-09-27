@@ -5,7 +5,7 @@ const PostGrid = () => (
   <StaticQuery
     query={graphql`
       {
-        allContentfulBlogPost(limit: 5, sort: {fields: createdAt, order: DESC}) {
+        allContentfulBlogPost(limit: 8, sort: {fields: createdAt, order: DESC}) {
           edges {
             node {
               id
@@ -30,7 +30,7 @@ const PostGrid = () => (
     `}
     render={data => (
       <div className="postgrid__wrapper">
-        {console.log(data)}
+        {console.log(data.allContentfulBlogPost.edges)}
         {data.allContentfulBlogPost.edges.map(edge => (
           <a
             href={`/blog/${edge.node.slug}`}
