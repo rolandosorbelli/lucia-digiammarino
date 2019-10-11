@@ -16,6 +16,7 @@
   right: 10%;
   top: 40px;
   z-index: 11;
+  outline: none;
 }
 .hamburger:hover {
   opacity: 0.7;
@@ -40,6 +41,7 @@
   display: block;
   top: 50%;
   margin-top: -2px;
+  position: fixed;
 }
 .hamburger-inner,
 .hamburger-inner::before,
@@ -63,6 +65,10 @@
 }
 .hamburger-inner::after {
   bottom: -10px;
+}
+
+.hamburger--spin.is-active {
+  position: fixed;
 }
 
 .hamburger--spin .hamburger-inner {
@@ -100,8 +106,9 @@
 
 .hamburger-nav.opened {
   display: block;
-  position: absolute;
   width: 50%;
+  height: 100%;
+  position: fixed;
   top: 0;
   right: 0;
   height: 100%;
@@ -124,6 +131,10 @@
     & a {
       color: #f5f5f5;
       text-decoration: none;
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 }
