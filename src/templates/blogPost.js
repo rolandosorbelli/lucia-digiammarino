@@ -29,11 +29,19 @@ export const query = graphql`
         }
       }
     }
+    allContentfulBlogPost {
+      edges {
+        node {
+          id
+        }
+      }
+    }
   }
 `
 
 const blogPost = props => {
-  console.log(props)
+  console.log(props.data)
+
   return (
     <Layout>
       <Menu />

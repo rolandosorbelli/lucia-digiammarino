@@ -106,7 +106,7 @@
 
 .hamburger-nav.opened {
   display: block;
-  width: 50%;
+  width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
@@ -116,17 +116,27 @@
   z-index: 10;
 
   @include md {
-    width: 25%;
+    width: 50%;
   }
 
   & ul {
-    text-align: center;
+    text-align: end;
     position: absolute;
-    left: 39%;
-    top: 20%;
-    line-height: 80px;
+    right: 10%;
+    top: 140px;
     font-family: "lato", sans-serif;
     font-size: 1.2rem;
+    height: 70%;
+    padding: 0 15px;
+
+    @include md {
+      right: 20%;
+    }
+
+    & li {
+      vertical-align: middle;
+      margin-bottom: 50px;
+    }
 
     & a {
       color: #f5f5f5;

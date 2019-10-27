@@ -5,7 +5,10 @@ const PostGrid = () => (
   <StaticQuery
     query={graphql`
       {
-        allContentfulBlogPost(limit: 8, sort: {fields: createdAt, order: DESC}) {
+        allContentfulBlogPost(
+          limit: 8
+          sort: { fields: createdAt, order: DESC }
+        ) {
           edges {
             node {
               id
@@ -30,7 +33,7 @@ const PostGrid = () => (
     `}
     render={data => (
       <div className="postgrid__wrapper">
-        {console.log(data.allContentfulBlogPost.edges)}
+        {console.log(data)}
         {data.allContentfulBlogPost.edges.map(edge => (
           <a
             href={`/blog/${edge.node.slug}`}
@@ -48,7 +51,11 @@ const PostGrid = () => (
                 <p>{edge.node.shortSynopsis}</p>
                 <div>
                   {edge.node.category.map((category, index) => {
-                    return <span key={index}>{ (index ? ', ' : '') + category.title }</span>
+                    return (
+                      <span key={index}>
+                        {(index ? ", " : "") + category.title}
+                      </span>
+                    )
                   })}
                 </div>
               </div>
