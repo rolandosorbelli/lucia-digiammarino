@@ -92,12 +92,21 @@ const BlogPost = props => {
           ></div>
           <div className="blogpost__promoWrapper">
             <div className="blogpost__promoPrev">
-              {prevTitle !== undefined && <p>PREVIOUS</p>}
-              <a href={`/blog/${prevItem}`}>{prevTitle}</a>
+              {prevTitle !== undefined && (
+                <div className="blogpost__promo-inner">
+                  <p>← PREVIOUS</p>
+                  <a href={`/blog/${prevItem}`}>{prevTitle}</a>
+                </div>
+              )}
             </div>
+
             <div className="blogpost__promoNext">
-              {nextTitle !== undefined && <p>NEXT</p>}
-              <a href={`/blog/${nextItem}`}>{nextTitle}</a>
+              {nextTitle !== undefined && (
+                <div className="blogpost__promo-inner">
+                  <p>NEXT →</p>
+                  <a href={`/blog/${nextItem}`}>{nextTitle}</a>
+                </div>
+              )}
             </div>
           </div>
         </div>
