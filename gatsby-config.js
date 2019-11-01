@@ -21,16 +21,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`lato\:400,400i,800,800i`],
+        fonts: [`lato\:300,300i,400,400i,700`],
       },
-    },
-    {
-      resolve: `gatsby-plugin-web-font-loader`,
-      options: {
-        google: {
-          families: [`Lato`],
-        },
-      },
+      display: "swap",
     },
     `gatsby-plugin-sass`,
     {
