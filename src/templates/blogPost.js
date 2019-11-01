@@ -94,7 +94,7 @@ const BlogPost = props => {
             <div className="blogpost__promoPrev">
               {prevTitle !== undefined && (
                 <div className="blogpost__promo-inner">
-                  <p>← PREVIOUS</p>
+                  <span>← PREVIOUS</span>
                   <a href={`/blog/${prevItem}`}>{prevTitle}</a>
                 </div>
               )}
@@ -103,7 +103,7 @@ const BlogPost = props => {
             <div className="blogpost__promoNext">
               {nextTitle !== undefined && (
                 <div className="blogpost__promo-inner">
-                  <p>NEXT →</p>
+                  <span>NEXT →</span>
                   <a href={`/blog/${nextItem}`}>{nextTitle}</a>
                 </div>
               )}
