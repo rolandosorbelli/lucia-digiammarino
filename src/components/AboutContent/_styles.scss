@@ -4,9 +4,9 @@ main {
 
     &__content {
       font-family: "Lato";
-      letter-spacing: 0.1rem;
-      font-weight: 100;
-      line-height: 1.5rem;
+      // letter-spacing: 0.1rem;
+      font-weight: 500;
+      line-height: 1.75rem;
       color: #017b9a;
       padding: 20px 0;
       text-align: justify;
@@ -47,13 +47,13 @@ main {
 
   .aboutBody {
     font-family: "Lato";
-    letter-spacing: 0.1rem;
-    font-weight: 100;
-    line-height: 1.5rem;
+    // letter-spacing: 0.1rem;
+    font-weight: 500;
+    line-height: 1.75rem;
     color: #017b9a;
     padding: 20px 0 30px 0;
     text-align: justify;
-    font-style: italic;
+    // font-style: italic;
     width: 85%;
   }
 }
