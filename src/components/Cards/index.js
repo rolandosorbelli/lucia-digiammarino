@@ -39,12 +39,9 @@ class Cards extends React.Component {
               </div>
             </a>
 
-            <a
-              href="https://www.artstation.com/luciadigiammarino"
-              className="cards__item"
-            >
+            <a href="https://dribbble.com/digia" className="cards__item">
               <div className="cards__content">
-                <h1>ArtStation</h1>
+                <h1>Dribbble</h1>
                 <h2>Portfolio</h2>
               </div>
             </a>
