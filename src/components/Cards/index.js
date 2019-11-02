@@ -34,7 +34,7 @@ class Cards extends React.Component {
               className="cards__item"
             >
               <div className="cards__content">
-                <h1>Behance</h1>
+                <h1>Bēhance</h1>
                 <h2>Portfolio</h2>
               </div>
             </a>
