@@ -21,12 +21,12 @@ const AboutContent = () => (
       <main>
         <div className="aboutContent">
           <h1 className="aboutHeading">About me</h1>
-          <p
+          <div
             className="aboutBody"
             dangerouslySetInnerHTML={{
               __html: `${data.contentfulAboutPage.content.childMarkdownRemark.html}`,
             }}
-          ></p>
+          ></div>
           <h1 className="aboutHeading">Contact</h1>
           <div className="aboutContent__content">
             <h2>Email</h2>
