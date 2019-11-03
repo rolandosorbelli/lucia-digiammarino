@@ -45,7 +45,7 @@ main {
 
   .aboutBody {
     font-family: "Lato";
-    font-weight: 500;
+    font-weight: 300;
     line-height: 1.75rem;
     color: #017b9a;
     padding: 20px 0 30px 0;
@@ -59,6 +59,20 @@ main {
     & img {
       width: 100%;
       height: auto;
+    }
+
+    & a {
+      color: #ea5a5a;
+      font-style: italic;
+      text-decoration: underline;
+    }
+
+    & em {
+      font-style: italic;
+    }
+
+    & strong {
+      font-weight: 700;
     }
   }
 }
