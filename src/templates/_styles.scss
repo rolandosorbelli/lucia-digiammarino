@@ -108,6 +108,14 @@
       height: auto;
       border-radius: 10px;
     }
+
+    & em {
+      font-style: italic;
+    }
+
+    & strong {
+      font-weight: 400;
+    }
   }
 
   &__promoWrapper {
