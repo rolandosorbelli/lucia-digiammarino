@@ -1,0 +1,12 @@
+.footer {
+  display: block;
+  background-color: #017b9a;
+
+  & p {
+    font-family: "Lato";
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #f5f5f5;
+    padding: 30px 20px;
+  }
+}

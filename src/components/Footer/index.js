@@ -2,7 +2,14 @@ import React, { Component } from "react"
 
 class Footer extends Component {
   render() {
-    return <div></div>
+    return (
+      <footer className="footer">
+        <p>
+          &copy; Copyright {new Date().getFullYear()}, Lucia Digiammarino. All
+          Rights Reserved.
+        </p>
+      </footer>
+    )
   }
 }
 

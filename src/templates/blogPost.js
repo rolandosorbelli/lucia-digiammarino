@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import logo from "../images/logo.svg"
 import Menu from "../components/Menu"
+import Footer from "../components/Footer"
 
 export const query = graphql`
   query blogPost($id: String!) {
@@ -64,7 +65,7 @@ const BlogPost = props => {
   console.log(nextItem, nextTitle, "NEXT")
 
   return (
-    <Layout>
+    <>
       <Menu />
       <div className="blogContainer">
         <a href="/">
@@ -111,7 +112,7 @@ const BlogPost = props => {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   )
 }
 
