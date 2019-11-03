@@ -30,13 +30,13 @@ const AboutContent = () => (
           <h1 className="aboutHeading">Contact</h1>
           <div className="aboutContent__content">
             <h2>Email</h2>
-            <a href="mailto:blahblah@gmail.com">blahblah@gmail.com</a>
-            <h2>Phone</h2>
-            <a href="tel:+0123456789">+0 123 456 789</a>
-            <h2>Skype</h2>
-            <a href="skype:blah_blah">blah_blah</a>
-            <h2>Address</h2>
-            <p>123a Blah Road, N4 3EX, London</p>
+            <a href="mailto:luciadigiammarino@gmail.com">
+              luciadigiammarino@gmail.com
+            </a>
+            <h2>Instagram</h2>
+            <a href="https://www.instagram.com/lu.digia/">lu.digia</a>
+            <h2>Facebook</h2>
+            <a href="https://www.facebook.com/ludigia/">ludigia</a>
           </div>
         </div>
       </main>
