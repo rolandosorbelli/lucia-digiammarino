@@ -47,12 +47,10 @@ class Menu extends Component {
               <a href="https://www.linkedin.com/in/luciadigia/">LinkedIn</a>
             </li>
             <li>
-              <a href="https://www.behance.net/luciadigiammarino">Behance</a>
+              <a href="https://www.behance.net/luciadigiammarino">Bēhance</a>
             </li>
             <li>
-              <a href="https://www.artstation.com/luciadigiammarino">
-                ArtStation
-              </a>
+              <a href="https://dribbble.com/digia">Dribbble</a>
             </li>
           </ul>
         </div>

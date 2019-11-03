@@ -15,7 +15,7 @@ class Cards extends React.Component {
             <a href="/about" className="cards__item">
               <div className="cards__content">
                 <h1>About me</h1>
-                <h2>Contacts</h2>
+                <h2>Contact</h2>
               </div>
             </a>
 

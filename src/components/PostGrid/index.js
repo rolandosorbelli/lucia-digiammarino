@@ -5,10 +5,7 @@ const PostGrid = () => (
   <StaticQuery
     query={graphql`
       {
-        allContentfulBlogPost(
-          limit: 8
-          sort: { fields: createdAt, order: DESC }
-        ) {
+        allContentfulBlogPost(sort: { fields: createdAt, order: DESC }) {
           edges {
             node {
               id
