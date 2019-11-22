@@ -1,5 +1,10 @@
 import React from "react"
 
+import aboutMe from "../../images/AboutMe.svg"
+import behance from "../../images/Behance.svg"
+import dribbble from "../../images/Dribbble.svg"
+import linkedin from "../../images/LinkedIn.svg"
+
 class Cards extends React.Component {
   constructor(props) {
     super(props)
@@ -17,6 +22,7 @@ class Cards extends React.Component {
                 <h1>About me</h1>
                 <h2>Contact</h2>
               </div>
+              <img className="cards__image" src={aboutMe} alt="" />
             </a>
 
             <a
@@ -27,6 +33,7 @@ class Cards extends React.Component {
                 <h1>LinkedIn</h1>
                 <h2>CV</h2>
               </div>
+              <img className="cards__image" src={linkedin} alt="" />
             </a>
 
             <a
@@ -37,6 +44,7 @@ class Cards extends React.Component {
                 <h1>Bēhance</h1>
                 <h2>Portfolio</h2>
               </div>
+              <img className="cards__image" src={behance} alt="" />
             </a>
 
             <a href="https://dribbble.com/digia" className="cards__item">
@@ -44,6 +52,7 @@ class Cards extends React.Component {
                 <h1>Dribbble</h1>
                 <h2>Portfolio</h2>
               </div>
+              <img className="cards__image" src={dribbble} alt="" />
             </a>
           </div>
         </div>

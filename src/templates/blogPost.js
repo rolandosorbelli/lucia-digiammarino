@@ -65,7 +65,7 @@ const BlogPost = props => {
   console.log(nextItem, nextTitle, "NEXT")
 
   return (
-    <>
+    <div>
       <Menu />
       <div className="blogContainer">
         <a href="/">
@@ -77,42 +77,45 @@ const BlogPost = props => {
             backgroundImage: `url(${props.data.contentfulBlogPost.image.fluid.src})`,
           }}
         />
-        <div className="blogpost">
-          <h1 className="blogpost__title">
-            {props.data.contentfulBlogPost.title}
-          </h1>
+        <div className="blogpost__wrapper">
+          <div className="blogpost">
+            <h1 className="blogpost__title">
+              {props.data.contentfulBlogPost.title}
+            </h1>
 
-          <p className="blogpost__date">
-            {props.data.contentfulBlogPost.createdAt}
-          </p>
-          <div
-            className="blogpost__content"
-            dangerouslySetInnerHTML={{
-              __html: `${props.data.contentfulBlogPost.content.childMarkdownRemark.html}`,
-            }}
-          ></div>
-          <div className="blogpost__promoWrapper">
-            <div className="blogpost__promoPrev">
-              {prevTitle !== undefined && (
-                <div className="blogpost__promo-inner">
-                  <span>← PREVIOUS</span>
-                  <a href={`/blog/${prevItem}`}>{prevTitle}</a>
-                </div>
-              )}
-            </div>
+            <p className="blogpost__date">
+              {props.data.contentfulBlogPost.createdAt}
+            </p>
+            <div
+              className="blogpost__content"
+              dangerouslySetInnerHTML={{
+                __html: `${props.data.contentfulBlogPost.content.childMarkdownRemark.html}`,
+              }}
+            ></div>
+            <div className="blogpost__promoWrapper">
+              <div className="blogpost__promoPrev">
+                {prevTitle !== undefined && (
+                  <div className="blogpost__promo-inner">
+                    <span>← PREVIOUS</span>
+                    <a href={`/blog/${prevItem}`}>{prevTitle}</a>
+                  </div>
+                )}
+              </div>
 
-            <div className="blogpost__promoNext">
-              {nextTitle !== undefined && (
-                <div className="blogpost__promo-inner">
-                  <span>NEXT →</span>
-                  <a href={`/blog/${nextItem}`}>{nextTitle}</a>
-                </div>
-              )}
+              <div className="blogpost__promoNext">
+                {nextTitle !== undefined && (
+                  <div className="blogpost__promo-inner">
+                    <span>NEXT →</span>
+                    <a href={`/blog/${nextItem}`}>{nextTitle}</a>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+      <Footer className="blogpost__footer" />
+    </div>
   )
 }
 
