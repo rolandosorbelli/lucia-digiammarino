@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Lucia Di Giammarino`,
-    description: `| Portfolio`,
+    title: `Di Già`,
+    description: `Lucia Di Giammarino`,
     author: `Rolando Sorbelli`,
   },
   plugins: [
@@ -44,7 +44,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

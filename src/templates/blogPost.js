@@ -1,7 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import SEO from "../components/SEO"
+// import Layout from "../components/layout"
 import logo from "../images/logo.svg"
 import Menu from "../components/Menu"
 import Footer from "../components/Footer"
@@ -42,14 +43,12 @@ export const query = graphql`
 `
 
 const BlogPost = props => {
-  // console.log(props.data.allContentfulBlogPost)
   let currentPostId = props.data.contentfulBlogPost.slug
   let allPosts = props.data.allContentfulBlogPost.edges
   let allSlugs = []
   Object.values(allPosts).filter(value =>
     allSlugs.push(value.node.slug, value.node.title)
   )
-  console.log(allSlugs)
   let index = allSlugs.indexOf(currentPostId)
   let prevItem
   let prevTitle
@@ -61,11 +60,9 @@ const BlogPost = props => {
     nextItem = allSlugs[index - 2]
     nextTitle = allSlugs[index - 1]
   }
-  console.log(prevItem, prevTitle, "PREV")
-  console.log(nextItem, nextTitle, "NEXT")
-
   return (
     <div>
+      <SEO title={props.data.contentfulBlogPost.title} />
       <Menu />
       <div className="blogContainer">
         <a href="/">
