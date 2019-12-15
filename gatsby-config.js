@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Lucia Di Giammarino`,
-    description: `Lucia Di Giammarino | Portfolio`,
+    description: `| Portfolio`,
     author: `Rolando Sorbelli`,
   },
   plugins: [
