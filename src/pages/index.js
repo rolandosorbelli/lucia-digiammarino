@@ -1,5 +1,5 @@
 import React from "react"
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 import Header from "../components/Header"
 import Cards from "../components/Cards"
 import NewsHeader from "../components/NewsHeader"

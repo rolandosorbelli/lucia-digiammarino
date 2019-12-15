@@ -1,6 +1,6 @@
 import React from "react"
 
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 import Header from "../components/Header"
 import AboutContent from "../components/AboutContent"
 import Menu from "../components/Menu"
