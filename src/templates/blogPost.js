@@ -14,7 +14,6 @@ export const query = graphql`
       id
       slug
       createdAt(locale: "en-GB", formatString: "D/MM/Y")
-      quote
       category {
         id
         title
