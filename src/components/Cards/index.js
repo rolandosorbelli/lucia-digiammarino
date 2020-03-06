@@ -2,7 +2,7 @@ import React from "react"
 
 import aboutMe from "../../images/AboutMe.svg"
 import behance from "../../images/Behance.svg"
-import dribbble from "../../images/Dribbble.svg"
+import redbubble from "../../images/redbubble.svg"
 import linkedin from "../../images/LinkedIn.svg"
 
 class Cards extends React.Component {
@@ -22,7 +22,12 @@ class Cards extends React.Component {
                 <h1>About me</h1>
                 <h2>Contact</h2>
               </div>
-              <img className="cards__image" src={aboutMe} alt="" />
+              <img
+                className="cards__image"
+                src={aboutMe}
+                alt=""
+                style={{ marginBottom: "10px" }}
+              />
             </a>
 
             <a
@@ -47,12 +52,15 @@ class Cards extends React.Component {
               <img className="cards__image" src={behance} alt="" />
             </a>
 
-            <a href="https://dribbble.com/digia" className="cards__item">
+            <a
+              href="https://www.redbubble.com/people/digiaart/shop"
+              className="cards__item"
+            >
               <div className="cards__content">
-                <h1>Dribbble</h1>
-                <h2>Portfolio</h2>
+                <h1>RedBubble</h1>
+                <h2>My shop</h2>
               </div>
-              <img className="cards__image" src={dribbble} alt="" />
+              <img className="cards__image" src={redbubble} alt="" />
             </a>
           </div>
         </div>
