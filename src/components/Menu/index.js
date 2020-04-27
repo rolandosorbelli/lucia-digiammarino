@@ -50,7 +50,9 @@ class Menu extends Component {
               <a href="https://www.behance.net/luciadigiammarino">Bēhance</a>
             </li>
             <li>
-              <a href="https://dribbble.com/digia">Dribbble</a>
+              <a href="https://www.redbubble.com/people/digiaart/shop">
+                RedBubble
+              </a>
             </li>
           </ul>
         </div>
