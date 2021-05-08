@@ -21,7 +21,7 @@
     "gatsby-transformer-remark": "^2.6.24",
     "gatsby-transformer-sharp": "^2.2.14",
     "jump.js": "^1.0.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "lodash.template": "^4.5.0",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
