@@ -10,7 +10,7 @@ class Index extends React.Component {
   render() {
     return (
       <>
-        <SEO title="Di Già" />
+        <SEO title="Medusa" />
         <Header />
         <Cards />
         <NewsHeader />
