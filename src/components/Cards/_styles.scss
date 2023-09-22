@@ -31,6 +31,7 @@ main {
   position: relative;
   top: 0;
   transition: top ease 0.5s;
+  height: 200px;
 
   &:hover {
     top: -10px;
@@ -65,8 +66,9 @@ main {
 .cards__image {
   display: block;
   position: absolute;
-  width: 50%;
+  max-width: 40%;
   bottom: 0;
   right: 10px;
   z-index: 1;
+
 }

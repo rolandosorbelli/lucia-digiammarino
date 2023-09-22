@@ -13,18 +13,18 @@ class Header extends React.Component {
     return (
       <header>
         <div className="header__items">
-          <a className="header__items--left" href="/">
+          {/* <a className="header__items--left" href="/">
             <img
               className="header__items--logo"
               src={logo}
               alt="Lucia Di Giammarino Logo"
             />
-          </a>
+          </a> */}
           <div className="header__items--right">
             <div className="header__items--right__text">
               <h1>Lucia</h1>
               <h1>Di Giammarino</h1>
-              <h2>2D artist</h2>
+              <h2>Cartoonist</h2>
             </div>
           </div>
         </div>
