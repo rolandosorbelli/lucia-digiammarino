@@ -64,9 +64,9 @@ const BlogPost = props => {
       <SEO title={props.data.contentfulBlogPost.title} />
       <Menu />
       <div className="blogContainer">
-        <a href="/">
+        {/* <a href="/">
           <img className="logo" src={logo} alt="Lucia Di Giammarino Logo" />
-        </a>
+        </a> */}
         <div
           className="blogpost__hero"
           style={{
