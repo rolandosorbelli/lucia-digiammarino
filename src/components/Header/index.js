@@ -1,6 +1,6 @@
 import React from "react"
 
-import logo from "../../images/logo.svg"
+import logo from "../../images/logoMedusa.svg"
 
 class Header extends React.Component {
   constructor(props) {
@@ -13,13 +13,13 @@ class Header extends React.Component {
     return (
       <header>
         <div className="header__items">
-          {/* <a className="header__items--left" href="/">
+          <a className="header__items--left" href="/">
             <img
               className="header__items--logo"
               src={logo}
               alt="Lucia Di Giammarino Logo"
             />
-          </a> */}
+          </a>
           <div className="header__items--right">
             <div className="header__items--right__text">
               <h1>Lucia</h1>

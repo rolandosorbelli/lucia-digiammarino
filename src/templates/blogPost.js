@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import SEO from "../components/seo"
 // import Layout from "../components/layout"
-import logo from "../images/logo.svg"
+import logo from "../images/logoMedusa.svg"
 import Menu from "../components/Menu"
 import Footer from "../components/Footer"
 
@@ -64,9 +64,9 @@ const BlogPost = props => {
       <SEO title={props.data.contentfulBlogPost.title} />
       <Menu />
       <div className="blogContainer">
-        {/* <a href="/">
+        <a href="/">
           <img className="logo" src={logo} alt="Lucia Di Giammarino Logo" />
-        </a> */}
+        </a>
         <div
           className="blogpost__hero"
           style={{
