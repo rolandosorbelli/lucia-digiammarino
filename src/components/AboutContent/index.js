@@ -34,9 +34,9 @@ const AboutContent = () => (
               luciadigiammarino@gmail.com
             </a>
             <h2>Instagram</h2>
-            <a href="https://www.instagram.com/lu.digia/">lu.digia</a>
+            <a href="https://www.instagram.com/art.of.medusa/">art.of.medusa</a>
             <h2>Facebook</h2>
-            <a href="https://www.facebook.com/ludigia/">ludigia</a>
+            <a href="https://www.facebook.com/artofmedusa1">Art of Medusa</a>
           </div>
         </div>
       </main>
